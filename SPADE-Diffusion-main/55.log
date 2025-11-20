@@ -1,0 +1,2668 @@
+yuanming test 1119 waiting for GPT-4 response
+下面开始读条-------------->
+latent_model_input1 torch.Size([2, 4, 128, 96])
+latent_model_input2 torch.Size([2, 4, 128, 96])
+开始第一个uneit
+-------------------------------------------------------------------
+x torch.Size([2, 3072, 640])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 3072
+scale 16
+latent_h前 64
+latent_w前 48
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 64, 47, 640])
+outout torch.Size([2, 64, 1, 640])
+-------------------------------------------------------------------
+x torch.Size([2, 3072, 640])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 3072
+scale 16
+latent_h前 64
+latent_w前 48
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 64, 47, 640])
+outout torch.Size([2, 64, 1, 640])
+-------------------------------------------------------------------
+x torch.Size([2, 3072, 640])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 3072
+scale 16
+latent_h前 64
+latent_w前 48
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 64, 47, 640])
+outout torch.Size([2, 64, 1, 640])
+-------------------------------------------------------------------
+x torch.Size([2, 3072, 640])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 3072
+scale 16
+latent_h前 64
+latent_w前 48
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 64, 47, 640])
+outout torch.Size([2, 64, 1, 640])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 23, 1280])
+outout torch.Size([2, 32, 1, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 23, 1280])
+outout torch.Size([2, 32, 1, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 23, 1280])
+outout torch.Size([2, 32, 1, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 23, 1280])
+outout torch.Size([2, 32, 1, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 23, 1280])
+outout torch.Size([2, 32, 1, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 23, 1280])
+outout torch.Size([2, 32, 1, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 23, 1280])
+outout torch.Size([2, 32, 1, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 23, 1280])
+outout torch.Size([2, 32, 1, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 23, 1280])
+outout torch.Size([2, 32, 1, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 23, 1280])
+outout torch.Size([2, 32, 1, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 23, 1280])
+outout torch.Size([2, 32, 1, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 23, 1280])
+outout torch.Size([2, 32, 1, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 23, 1280])
+outout torch.Size([2, 32, 1, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 23, 1280])
+outout torch.Size([2, 32, 1, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 23, 1280])
+outout torch.Size([2, 32, 1, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 23, 1280])
+outout torch.Size([2, 32, 1, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 23, 1280])
+outout torch.Size([2, 32, 1, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 23, 1280])
+outout torch.Size([2, 32, 1, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 23, 1280])
+outout torch.Size([2, 32, 1, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 23, 1280])
+outout torch.Size([2, 32, 1, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 23, 1280])
+outout torch.Size([2, 32, 1, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 23, 1280])
+outout torch.Size([2, 32, 1, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 23, 1280])
+outout torch.Size([2, 32, 1, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 23, 1280])
+outout torch.Size([2, 32, 1, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 23, 1280])
+outout torch.Size([2, 32, 1, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 23, 1280])
+outout torch.Size([2, 32, 1, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 23, 1280])
+outout torch.Size([2, 32, 1, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 23, 1280])
+outout torch.Size([2, 32, 1, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 23, 1280])
+outout torch.Size([2, 32, 1, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 23, 1280])
+outout torch.Size([2, 32, 1, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 23, 1280])
+outout torch.Size([2, 32, 1, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 23, 1280])
+outout torch.Size([2, 32, 1, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 23, 1280])
+outout torch.Size([2, 32, 1, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 23, 1280])
+outout torch.Size([2, 32, 1, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 23, 1280])
+outout torch.Size([2, 32, 1, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 23, 1280])
+outout torch.Size([2, 32, 1, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 23, 1280])
+outout torch.Size([2, 32, 1, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 23, 1280])
+outout torch.Size([2, 32, 1, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 23, 1280])
+outout torch.Size([2, 32, 1, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 23, 1280])
+outout torch.Size([2, 32, 1, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 23, 1280])
+outout torch.Size([2, 32, 1, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 23, 1280])
+outout torch.Size([2, 32, 1, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 23, 1280])
+outout torch.Size([2, 32, 1, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 23, 1280])
+outout torch.Size([2, 32, 1, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 23, 1280])
+outout torch.Size([2, 32, 1, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 23, 1280])
+outout torch.Size([2, 32, 1, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 23, 1280])
+outout torch.Size([2, 32, 1, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 23, 1280])
+outout torch.Size([2, 32, 1, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 23, 1280])
+outout torch.Size([2, 32, 1, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 23, 1280])
+outout torch.Size([2, 32, 1, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 23, 1280])
+outout torch.Size([2, 32, 1, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 23, 1280])
+outout torch.Size([2, 32, 1, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 23, 1280])
+outout torch.Size([2, 32, 1, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 23, 1280])
+outout torch.Size([2, 32, 1, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 23, 1280])
+outout torch.Size([2, 32, 1, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 23, 1280])
+outout torch.Size([2, 32, 1, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 23, 1280])
+outout torch.Size([2, 32, 1, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 23, 1280])
+outout torch.Size([2, 32, 1, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 23, 1280])
+outout torch.Size([2, 32, 1, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 23, 1280])
+outout torch.Size([2, 32, 1, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 3072, 640])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 3072
+scale 16
+latent_h前 64
+latent_w前 48
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 64, 47, 640])
+outout torch.Size([2, 64, 1, 640])
+-------------------------------------------------------------------
+x torch.Size([2, 3072, 640])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 3072
+scale 16
+latent_h前 64
+latent_w前 48
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 64, 47, 640])
+outout torch.Size([2, 64, 1, 640])
+-------------------------------------------------------------------
+x torch.Size([2, 3072, 640])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 3072
+scale 16
+latent_h前 64
+latent_w前 48
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 64, 47, 640])
+outout torch.Size([2, 64, 1, 640])
+-------------------------------------------------------------------
+x torch.Size([2, 3072, 640])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 3072
+scale 16
+latent_h前 64
+latent_w前 48
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 64, 47, 640])
+outout torch.Size([2, 64, 1, 640])
+-------------------------------------------------------------------
+x torch.Size([2, 3072, 640])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 3072
+scale 16
+latent_h前 64
+latent_w前 48
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 64, 47, 640])
+outout torch.Size([2, 64, 1, 640])
+-------------------------------------------------------------------
+x torch.Size([2, 3072, 640])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 3072
+scale 16
+latent_h前 64
+latent_w前 48
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 64, 47, 640])
+outout torch.Size([2, 64, 1, 640])
+noise_pred torch.Size([2, 4, 128, 96])
+开始第而个uneit
+-------------------------------------------------------------------
+x torch.Size([2, 3072, 640])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 3072
+scale 16
+latent_h前 64
+latent_w前 48
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 64, 0, 640])
+outout torch.Size([2, 64, 48, 640])
+-------------------------------------------------------------------
+x torch.Size([2, 3072, 640])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 3072
+scale 16
+latent_h前 64
+latent_w前 48
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 64, 0, 640])
+outout torch.Size([2, 64, 48, 640])
+-------------------------------------------------------------------
+x torch.Size([2, 3072, 640])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 3072
+scale 16
+latent_h前 64
+latent_w前 48
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 64, 0, 640])
+outout torch.Size([2, 64, 48, 640])
+-------------------------------------------------------------------
+x torch.Size([2, 3072, 640])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 3072
+scale 16
+latent_h前 64
+latent_w前 48
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 64, 0, 640])
+outout torch.Size([2, 64, 48, 640])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 0, 1280])
+outout torch.Size([2, 32, 24, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 0, 1280])
+outout torch.Size([2, 32, 24, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 0, 1280])
+outout torch.Size([2, 32, 24, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 0, 1280])
+outout torch.Size([2, 32, 24, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 0, 1280])
+outout torch.Size([2, 32, 24, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 0, 1280])
+outout torch.Size([2, 32, 24, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 0, 1280])
+outout torch.Size([2, 32, 24, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 0, 1280])
+outout torch.Size([2, 32, 24, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 0, 1280])
+outout torch.Size([2, 32, 24, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 0, 1280])
+outout torch.Size([2, 32, 24, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 0, 1280])
+outout torch.Size([2, 32, 24, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 0, 1280])
+outout torch.Size([2, 32, 24, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 0, 1280])
+outout torch.Size([2, 32, 24, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 0, 1280])
+outout torch.Size([2, 32, 24, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 0, 1280])
+outout torch.Size([2, 32, 24, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 0, 1280])
+outout torch.Size([2, 32, 24, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 0, 1280])
+outout torch.Size([2, 32, 24, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 0, 1280])
+outout torch.Size([2, 32, 24, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 0, 1280])
+outout torch.Size([2, 32, 24, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 0, 1280])
+outout torch.Size([2, 32, 24, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 0, 1280])
+outout torch.Size([2, 32, 24, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 0, 1280])
+outout torch.Size([2, 32, 24, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 0, 1280])
+outout torch.Size([2, 32, 24, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 0, 1280])
+outout torch.Size([2, 32, 24, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 0, 1280])
+outout torch.Size([2, 32, 24, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 0, 1280])
+outout torch.Size([2, 32, 24, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 0, 1280])
+outout torch.Size([2, 32, 24, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 0, 1280])
+outout torch.Size([2, 32, 24, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 0, 1280])
+outout torch.Size([2, 32, 24, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 0, 1280])
+outout torch.Size([2, 32, 24, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 0, 1280])
+outout torch.Size([2, 32, 24, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 0, 1280])
+outout torch.Size([2, 32, 24, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 0, 1280])
+outout torch.Size([2, 32, 24, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 0, 1280])
+outout torch.Size([2, 32, 24, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 0, 1280])
+outout torch.Size([2, 32, 24, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 0, 1280])
+outout torch.Size([2, 32, 24, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 0, 1280])
+outout torch.Size([2, 32, 24, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 0, 1280])
+outout torch.Size([2, 32, 24, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 0, 1280])
+outout torch.Size([2, 32, 24, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 0, 1280])
+outout torch.Size([2, 32, 24, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 0, 1280])
+outout torch.Size([2, 32, 24, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 0, 1280])
+outout torch.Size([2, 32, 24, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 0, 1280])
+outout torch.Size([2, 32, 24, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 0, 1280])
+outout torch.Size([2, 32, 24, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 0, 1280])
+outout torch.Size([2, 32, 24, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 0, 1280])
+outout torch.Size([2, 32, 24, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 0, 1280])
+outout torch.Size([2, 32, 24, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 0, 1280])
+outout torch.Size([2, 32, 24, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 0, 1280])
+outout torch.Size([2, 32, 24, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 0, 1280])
+outout torch.Size([2, 32, 24, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 0, 1280])
+outout torch.Size([2, 32, 24, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 0, 1280])
+outout torch.Size([2, 32, 24, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 0, 1280])
+outout torch.Size([2, 32, 24, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 0, 1280])
+outout torch.Size([2, 32, 24, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 0, 1280])
+outout torch.Size([2, 32, 24, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 0, 1280])
+outout torch.Size([2, 32, 24, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 0, 1280])
+outout torch.Size([2, 32, 24, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 0, 1280])
+outout torch.Size([2, 32, 24, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 0, 1280])
+outout torch.Size([2, 32, 24, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 768, 1280])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 768
+scale 32
+latent_h前 32
+latent_w前 24
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 32, 0, 1280])
+outout torch.Size([2, 32, 24, 1280])
+-------------------------------------------------------------------
+x torch.Size([2, 3072, 640])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 3072
+scale 16
+latent_h前 64
+latent_w前 48
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 64, 0, 640])
+outout torch.Size([2, 64, 48, 640])
+-------------------------------------------------------------------
+x torch.Size([2, 3072, 640])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 3072
+scale 16
+latent_h前 64
+latent_w前 48
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 64, 0, 640])
+outout torch.Size([2, 64, 48, 640])
+-------------------------------------------------------------------
+x torch.Size([2, 3072, 640])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 3072
+scale 16
+latent_h前 64
+latent_w前 48
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 64, 0, 640])
+outout torch.Size([2, 64, 48, 640])
+-------------------------------------------------------------------
+x torch.Size([2, 3072, 640])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 3072
+scale 16
+latent_h前 64
+latent_w前 48
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 64, 0, 640])
+outout torch.Size([2, 64, 48, 640])
+-------------------------------------------------------------------
+x torch.Size([2, 3072, 640])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 3072
+scale 16
+latent_h前 64
+latent_w前 48
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 64, 0, 640])
+outout torch.Size([2, 64, 48, 640])
+-------------------------------------------------------------------
+x torch.Size([2, 3072, 640])
+context torch.Size([2, 231, 2048])
+height 1024
+width 1024
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+x_t 3072
+scale 16
+latent_h前 64
+latent_w前 48
+---
+ha 0
+wa 0
+---
+outout torch.Size([2, 64, 0, 640])
+outout torch.Size([2, 64, 48, 640])
+noise_pred_r torch.Size([2, 4, 128, 96])

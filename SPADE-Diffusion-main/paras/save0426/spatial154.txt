@@ -1,0 +1,4 @@
+Final split ratio: 0.998,0.002
+Final split ratio r: 0.002,0.998
+Final split ratio all: 0.5,0.5
+Regional Prompt: a balloon BREAK a butterfly

@@ -1,0 +1,85 @@
+You are a master of image content recognition. You need to extract the key objects in the caption, look for those key objects in the picture, and then tell me if those key objects are included in the picture.Your task is described as follows:
+Extract the key entities from the title and locate those key entities in the picture.
+For each key object identified in the previous step, use precise spatial imagination to determine the specific area in the image where each object is allocated, segment the image into several areas, and number them starting from 0.The area refers to dividing the entire image into different regions for a general layout.Each key entities is assigned to a area.This layout should segment the image and strictly follow the method below:
+a. Determine whether the image is divided into multiple rows by key objects (It should be noted that a single entity should not be split into different rows, except when describing different parts of a person like the head, clothes/body, and lower garment):
+• If so, segment the image into several rows and assign an identifier to each row from top to bottom (e.g., Row0, Row1, ...).
+• Identify the percentage of height each row occupies within the image (e.g., Row0 (height=0.33) indicates that the row occupies 33% of the height of the entire upper portion of the image).
+b. Within each row, further assess the need for division into multiple regions (it should be noted that each region should contain only one entity):
+• If required, divide each row from left to right into several blocks and assign a number to each block (e.g., Region0, Region1, ...).
+• Identify the percentage of width each block occupies within its respective row (e.g., Region0 (Row0, width=0.5) denotes that the block is located in Row0 and occupies 50% of the width of that row's left side).
+c. Output the overall ratio along with the key objects:
+• First, combine each row's height separated by semicolons like Row0_height; Row1_height; ...; Rown_height. If there is only one row, skip this step.
+• Secondly, attach each row's regions' width after each row's height separated with commas, like Row0_height,Row0_region0_width,Row0_region1_width,...Row0_regionm_width;Row1_height,Row1_region0_width,...;Rown_height,...Rown_regionj_width.
+• If the row doesn't have more than one region, just continue to the next row.
+• It should be noted that we should use decimal representation in the overall ratio, and if there is only one row, just omit the row ratio.
+The output should follow the format of the examples below:
+
+Examples:
+caption: A frog on the right of a couch.
+Key entities identification:
+We identify two objects in the text.
+1)a frog
+2)a couch
+All the key objects have been found in the picture!!!
+So, we find that the image is divided into two sub-regions.
+The structure of the image is:
+a. Rows
+Row0 (height=1)
+b. Regions within rows
+Region0 (Row0, width=0.5): a frog
+Region1 (Row0, width=0.5): a couch
+c. Overall ratio:
+Row0_height,Row0_region0_width,Row0_region1_width;
+Final split ratio: 1,1
+key object: a frog BREAK a couch
+
+caption: An airplane on the left of a candle.
+Key entities identification:
+We identify two objects in the text.
+1)an airplane
+2)a candle
+Only an airplane has been found in the picture!!!
+So, we find that the image is divided into two sub-regions.
+The structure of the image is:
+a. Rows
+Row0 (height=1)
+b. Regions within rows
+Region0 (Row0, width=0.5): an airplane
+Region1 (Row0, width=0.5): Not a candle was found
+c. Overall ratio:
+Row0_height,Row0_region0_width,Row0_region1_width;
+Final split ratio: 1,1.5
+key object: an airplane BREAK Not a candle was found
+
+caption: a horse on the bottom of a plate
+Key entities identification:
+We identify two objects in the text.
+1)a horse
+2)a plate
+Only a plate has been found in the picture!!!
+So, we find that the image is divided into two sub-regions.
+The structure of the image is:
+a. Rows
+Row0(height=0.3)
+Row1(height=0.7)
+b. Regions within rows
+Region0:(Row0,width=1):Not a horse was found 
+Region1:(Row1,width=1) :a plate
+c. Overall ratio:
+Row0_height,(Row0_region0_width only one region in the row, skip); Row1_height,(Row1_region1_width only one region in the row, skip);
+Final split ratio: 3;7
+key object: Not a horse was found BREAK a plate
+
+caption: a cup on the bottom of a dog
+Key entities identification:
+We identify two objects in the text.
+1)a cup
+2)a dog
+None of the key objects have been found in the picture!!!
+So, we have re-divided the image into two sub-regions.
+The structure of the image is:
+Row0(height=0.6): a cup
+Row1(height=0.4): a dog
+Row0_height,(Row0_region0_width only one region in the row, skip); Row1_height,(Row1_region1_width only one region in the row, skip);
+Final split ratio: 1.5;1
+key object: a cup BREAK a dog

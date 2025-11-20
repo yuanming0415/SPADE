@@ -1,0 +1,247 @@
+
+开始init了！！！
+yuanming test 1119 waiting for GPT-4 response
+
+开始call方法了!!!
+***pt***:: [[0, 1], [1, 2], [2, 3], [3, 4], [4, 5], [5, 6], [6, 7]]
+***ppt***:: [2, 7, 8, 8, 5, 16, 6]
+
+开始keyconverter!!!
+***最终的split_ratio2r***: [[0, 0.5], [0.5, 1.0]]
+***最终的split_ratio2***: [[[0, 0.33333333333333337], [0.33333333333333337, 0.6666666666666667], [0.6666666666666667, 1.0]], [[0, 0.33333333333333337], [0.33333333333333337, 0.6666666666666667], [0.6666666666666667, 1.0]]]
+***替换后结果self.prompt***:: six airplanes ADDBASE A gleaming Airplane 1 against a bright blue backdrop, the day-lit metallic body standing out vividly. ADDCOL Airplane 2 cruising along with elegant contrails, framed by the gentle expanse of billowing clouds. ADDCOL Airplane 3 in synchronized flight, its esoteric design highlighted by vibrant wing patterns. ADDROW The tranquil scene of Airplane 4 with colorful tail designs, silhouetted by a soothing sunset. ADDCOL Swiftly navigating Airplane 5 accents its aerial prowess with vapor trails against a faint earthly arc. ADDCOL Airplane 6's silhouette rises against a luminescent horizon, underscoring its ascent and shadow interplay.
+
+开始matrixdealer!!!
+***lbreaks***:: [[0, 0, 0], [0, 0, 0]]
+假
+***lcells***:: [[0.33, 0.33, 0.33], [0.33, 0.33, 0.33]]
+***split_ratio2r后***:: [0.5, 0.5]
+***split_ratio2后***:: [[0.33, 0.33, 0.33], [0.33, 0.33, 0.33]]
+***lcells***:: [[0.5, 0.5, 0.5], [0.5, 0.5, 0.5]]
+***split_ratio***:: [[[0, 0.33333333333333337], [0.33333333333333337, 0.6666666666666667], [0.6666666666666667, 1.0]], [[0, 0.33333333333333337], [0.33333333333333337, 0.6666666666666667], [0.6666666666666667, 1.0]]]
+***split_ratior***: [[0, 0.5], [0.5, 1.0]]
+*******************************************************************************************************
+
+start:: 0 end:: 0.33333333333333337 base:: 0.5 breaks:: 0
+start:: 0.33333333333333337 end:: 0.6666666666666667 base:: 0.5 breaks:: 0
+start:: 0.6666666666666667 end:: 1.0 base:: 0.5 breaks:: 0
+row:: start:: 0 end 0.5
+
+
+start:: 0 end:: 0.33333333333333337 base:: 0.5 breaks:: 0
+start:: 0.33333333333333337 end:: 0.6666666666666667 base:: 0.5 breaks:: 0
+start:: 0.6666666666666667 end:: 1.0 base:: 0.5 breaks:: 0
+row:: start:: 0.5 end 1.0
+
+
+********************************************************************************************************
+**************开始后面的部分了************************************************************************************************************************************
+seed:: 63762
+不合法的参数如下:----------------------------------
+-----------------------------------------------------
+★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
+prompt=
+ six airplanes BREAK A gleaming Airplane 1 against a bright blue backdrop, the day-lit metallic body standing out vividly. BREAK Airplane 2 cruising along with elegant contrails, framed by the gentle expanse of billowing clouds. BREAK Airplane 3 in synchronized flight, its esoteric design highlighted by vibrant wing patterns. BREAK The tranquil scene of Airplane 4 with colorful tail designs, silhouetted by a soothing sunset. BREAK Swiftly navigating Airplane 5 accents its aerial prowess with vapor trails against a faint earthly arc. BREAK Airplane 6's silhouette rises against a luminescent horizon, underscoring its ascent and shadow interplay.
+prompt_2=
+ None
+device=
+ cuda:0
+num_images_per_prompt=
+ 1
+do_classifier_free_guidance=
+ True
+negative_prompt=
+ NSFW,worst quality,low quality,normal quality,lowres,monochrome,grayscale,skin spots,acnes,skin blemishes,age spot,ugly,duplicate,morbid,mutilated,tranny,mutated hands,poorly drawn hands,blurry,bad anatomy,bad proportions,extra limbs,disfigured,missing arms,extra legs,fused fingers,too many fingers,unclear eyes,lowers,bad hands,missing fingers,extra digit,bad hands,missing fingers,extra arms and legs
+negative_prompt_2=
+ None
+prompt_embeds=
+ None
+negative_prompt_embeds=
+ None
+pooled_prompt_embeds=
+ None
+negative_pooled_prompt_embeds=
+ None
+lora_scale=
+ None
+clip_skip=
+ None
+device cuda:0
+prompt <class 'list'>
+看看有区别吗?
+self.maybe_convert_prompt ["six airplanes BREAK A gleaming Airplane 1 against a bright blue backdrop, the day-lit metallic body standing out vividly. BREAK Airplane 2 cruising along with elegant contrails, framed by the gentle expanse of billowing clouds. BREAK Airplane 3 in synchronized flight, its esoteric design highlighted by vibrant wing patterns. BREAK The tranquil scene of Airplane 4 with colorful tail designs, silhouetted by a soothing sunset. BREAK Swiftly navigating Airplane 5 accents its aerial prowess with vapor trails against a faint earthly arc. BREAK Airplane 6's silhouette rises against a luminescent horizon, underscoring its ascent and shadow interplay."]
+self.maybe_convert_prompt ["six airplanes BREAK A gleaming Airplane 1 against a bright blue backdrop, the day-lit metallic body standing out vividly. BREAK Airplane 2 cruising along with elegant contrails, framed by the gentle expanse of billowing clouds. BREAK Airplane 3 in synchronized flight, its esoteric design highlighted by vibrant wing patterns. BREAK The tranquil scene of Airplane 4 with colorful tail designs, silhouetted by a soothing sunset. BREAK Swiftly navigating Airplane 5 accents its aerial prowess with vapor trails against a faint earthly arc. BREAK Airplane 6's silhouette rises against a luminescent horizon, underscoring its ascent and shadow interplay."]
+text_input_ids tensor([[49406,  4093, 33319, 49407, 49407, 49407, 49407, 49407, 49407, 49407,
+         49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407,
+         49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407,
+         49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407,
+         49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407,
+         49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407,
+         49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407,
+         49407, 49407, 49407, 49407, 49407, 49407, 49407]])
+pooled_prompt_embeds torch.Size([1, 77, 768])
+regional_prompt_embeds 1
+text_input_ids tensor([[49406,   320,  7166,  3507, 16451,   272,  1601,   320,  4852,  1746,
+         20802,   267,   518,   575,   268,  4350, 17257,  1774,  2862,   620,
+         11625,  3069,   269, 49407, 49407, 49407, 49407, 49407, 49407, 49407,
+         49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407,
+         49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407,
+         49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407,
+         49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407,
+         49407, 49407, 49407, 49407, 49407, 49407, 49407]])
+pooled_prompt_embeds torch.Size([1, 77, 768])
+regional_prompt_embeds 2
+text_input_ids tensor([[49406, 16451,   273, 19743,  2528,   593, 11124,  9880,  1543,   267,
+         13135,   638,   518, 13577, 46886,   539,  3092,  8283,  6244,   269,
+         49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407,
+         49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407,
+         49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407,
+         49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407,
+         49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407,
+         49407, 49407, 49407, 49407, 49407, 49407, 49407]])
+pooled_prompt_embeds torch.Size([1, 77, 768])
+regional_prompt_embeds 3
+text_input_ids tensor([[49406, 16451,   274,   530, 23943,  7690,  3795,   267,   902, 29890,
+           704,  1029,  1681, 22252,   638, 14270,  1340, 11637,   269, 49407,
+         49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407,
+         49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407,
+         49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407,
+         49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407,
+         49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407,
+         49407, 49407, 49407, 49407, 49407, 49407, 49407]])
+pooled_prompt_embeds torch.Size([1, 77, 768])
+regional_prompt_embeds 4
+text_input_ids tensor([[49406,   518, 35764,  3562,   539, 16451,   275,   593, 11444,  4132,
+          6747,   267, 20589,  1169,   775,   638,   320, 27730,  3424,   269,
+         49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407,
+         49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407,
+         49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407,
+         49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407,
+         49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407,
+         49407, 49407, 49407, 49407, 49407, 49407, 49407]])
+pooled_prompt_embeds torch.Size([1, 77, 768])
+regional_prompt_embeds 5
+text_input_ids tensor([[49406, 28548,  1646, 33134, 16451,   276, 31738,   902, 12440,   644,
+         44431,   593, 30729, 10633,  1601,   320, 30807,  5184,   597, 11592,
+           269, 49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407,
+         49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407,
+         49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407,
+         49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407,
+         49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407,
+         49407, 49407, 49407, 49407, 49407, 49407, 49407]])
+pooled_prompt_embeds torch.Size([1, 77, 768])
+regional_prompt_embeds 6
+text_input_ids tensor([[49406, 16451,   277,   568, 26149, 13362,  1601,   320, 15867,  3330,
+           621, 11920,   267,  1473,  9198,   902, 36625,   537,  7068,  1006,
+          1453,   269, 49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407,
+         49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407,
+         49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407,
+         49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407,
+         49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407, 49407,
+         49407, 49407, 49407, 49407, 49407, 49407, 49407]])
+pooled_prompt_embeds torch.Size([1, 77, 768])
+regional_prompt_embeds 7
+prompt_embeds torch.Size([1, 539, 768])
+---prompt_embeds_list [tensor([[[-3.8340, -2.6562,  3.8594,  ...,  0.7241, -2.6875, -1.7539],
+         [ 0.5630,  0.0872, -0.2783,  ...,  0.4897,  0.8564,  0.4087],
+         [-0.0964,  0.3020, -0.0115,  ..., -0.2500, -0.3074, -0.4775],
+         ...,
+         [-0.5200,  0.2927, -0.3203,  ..., -0.6138, -0.5288, -0.2102],
+         [-0.5225,  0.3018, -0.3145,  ..., -0.6050, -0.5273, -0.2051],
+         [-0.5010,  0.3586, -0.2988,  ..., -0.6289, -0.5430, -0.1973]]],
+       device='cuda:0', dtype=torch.float16)]
+看看有区别吗?
+self.maybe_convert_prompt ["six airplanes BREAK A gleaming Airplane 1 against a bright blue backdrop, the day-lit metallic body standing out vividly. BREAK Airplane 2 cruising along with elegant contrails, framed by the gentle expanse of billowing clouds. BREAK Airplane 3 in synchronized flight, its esoteric design highlighted by vibrant wing patterns. BREAK The tranquil scene of Airplane 4 with colorful tail designs, silhouetted by a soothing sunset. BREAK Swiftly navigating Airplane 5 accents its aerial prowess with vapor trails against a faint earthly arc. BREAK Airplane 6's silhouette rises against a luminescent horizon, underscoring its ascent and shadow interplay."]
+self.maybe_convert_prompt ["six airplanes BREAK A gleaming Airplane 1 against a bright blue backdrop, the day-lit metallic body standing out vividly. BREAK Airplane 2 cruising along with elegant contrails, framed by the gentle expanse of billowing clouds. BREAK Airplane 3 in synchronized flight, its esoteric design highlighted by vibrant wing patterns. BREAK The tranquil scene of Airplane 4 with colorful tail designs, silhouetted by a soothing sunset. BREAK Swiftly navigating Airplane 5 accents its aerial prowess with vapor trails against a faint earthly arc. BREAK Airplane 6's silhouette rises against a luminescent horizon, underscoring its ascent and shadow interplay."]
+text_input_ids tensor([[49406,  4093, 33319, 49407,     0,     0,     0,     0,     0,     0,
+             0,     0,     0,     0,     0,     0,     0,     0,     0,     0,
+             0,     0,     0,     0,     0,     0,     0,     0,     0,     0,
+             0,     0,     0,     0,     0,     0,     0,     0,     0,     0,
+             0,     0,     0,     0,     0,     0,     0,     0,     0,     0,
+             0,     0,     0,     0,     0,     0,     0,     0,     0,     0,
+             0,     0,     0,     0,     0,     0,     0,     0,     0,     0,
+             0,     0,     0,     0,     0,     0,     0]])
+pooled_prompt_embeds torch.Size([1, 1280])
+regional_prompt_embeds 1
+text_input_ids tensor([[49406,   320,  7166,  3507, 16451,   272,  1601,   320,  4852,  1746,
+         20802,   267,   518,   575,   268,  4350, 17257,  1774,  2862,   620,
+         11625,  3069,   269, 49407,     0,     0,     0,     0,     0,     0,
+             0,     0,     0,     0,     0,     0,     0,     0,     0,     0,
+             0,     0,     0,     0,     0,     0,     0,     0,     0,     0,
+             0,     0,     0,     0,     0,     0,     0,     0,     0,     0,
+             0,     0,     0,     0,     0,     0,     0,     0,     0,     0,
+             0,     0,     0,     0,     0,     0,     0]])
+pooled_prompt_embeds torch.Size([1, 1280])
+regional_prompt_embeds 2
+text_input_ids tensor([[49406, 16451,   273, 19743,  2528,   593, 11124,  9880,  1543,   267,
+         13135,   638,   518, 13577, 46886,   539,  3092,  8283,  6244,   269,
+         49407,     0,     0,     0,     0,     0,     0,     0,     0,     0,
+             0,     0,     0,     0,     0,     0,     0,     0,     0,     0,
+             0,     0,     0,     0,     0,     0,     0,     0,     0,     0,
+             0,     0,     0,     0,     0,     0,     0,     0,     0,     0,
+             0,     0,     0,     0,     0,     0,     0,     0,     0,     0,
+             0,     0,     0,     0,     0,     0,     0]])
+pooled_prompt_embeds torch.Size([1, 1280])
+regional_prompt_embeds 3
+text_input_ids tensor([[49406, 16451,   274,   530, 23943,  7690,  3795,   267,   902, 29890,
+           704,  1029,  1681, 22252,   638, 14270,  1340, 11637,   269, 49407,
+             0,     0,     0,     0,     0,     0,     0,     0,     0,     0,
+             0,     0,     0,     0,     0,     0,     0,     0,     0,     0,
+             0,     0,     0,     0,     0,     0,     0,     0,     0,     0,
+             0,     0,     0,     0,     0,     0,     0,     0,     0,     0,
+             0,     0,     0,     0,     0,     0,     0,     0,     0,     0,
+             0,     0,     0,     0,     0,     0,     0]])
+pooled_prompt_embeds torch.Size([1, 1280])
+regional_prompt_embeds 4
+text_input_ids tensor([[49406,   518, 35764,  3562,   539, 16451,   275,   593, 11444,  4132,
+          6747,   267, 20589,  1169,   775,   638,   320, 27730,  3424,   269,
+         49407,     0,     0,     0,     0,     0,     0,     0,     0,     0,
+             0,     0,     0,     0,     0,     0,     0,     0,     0,     0,
+             0,     0,     0,     0,     0,     0,     0,     0,     0,     0,
+             0,     0,     0,     0,     0,     0,     0,     0,     0,     0,
+             0,     0,     0,     0,     0,     0,     0,     0,     0,     0,
+             0,     0,     0,     0,     0,     0,     0]])
+pooled_prompt_embeds torch.Size([1, 1280])
+regional_prompt_embeds 5
+text_input_ids tensor([[49406, 28548,  1646, 33134, 16451,   276, 31738,   902, 12440,   644,
+         44431,   593, 30729, 10633,  1601,   320, 30807,  5184,   597, 11592,
+           269, 49407,     0,     0,     0,     0,     0,     0,     0,     0,
+             0,     0,     0,     0,     0,     0,     0,     0,     0,     0,
+             0,     0,     0,     0,     0,     0,     0,     0,     0,     0,
+             0,     0,     0,     0,     0,     0,     0,     0,     0,     0,
+             0,     0,     0,     0,     0,     0,     0,     0,     0,     0,
+             0,     0,     0,     0,     0,     0,     0]])
+pooled_prompt_embeds torch.Size([1, 1280])
+regional_prompt_embeds 6
+text_input_ids tensor([[49406, 16451,   277,   568, 26149, 13362,  1601,   320, 15867,  3330,
+           621, 11920,   267,  1473,  9198,   902, 36625,   537,  7068,  1006,
+          1453,   269, 49407,     0,     0,     0,     0,     0,     0,     0,
+             0,     0,     0,     0,     0,     0,     0,     0,     0,     0,
+             0,     0,     0,     0,     0,     0,     0,     0,     0,     0,
+             0,     0,     0,     0,     0,     0,     0,     0,     0,     0,
+             0,     0,     0,     0,     0,     0,     0,     0,     0,     0,
+             0,     0,     0,     0,     0,     0,     0]])
+pooled_prompt_embeds torch.Size([1, 1280])
+regional_prompt_embeds 7
+prompt_embeds torch.Size([1, 539, 1280])
+---prompt_embeds_list [tensor([[[-3.8340, -2.6562,  3.8594,  ...,  0.7241, -2.6875, -1.7539],
+         [ 0.5630,  0.0872, -0.2783,  ...,  0.4897,  0.8564,  0.4087],
+         [-0.0964,  0.3020, -0.0115,  ..., -0.2500, -0.3074, -0.4775],
+         ...,
+         [-0.5200,  0.2927, -0.3203,  ..., -0.6138, -0.5288, -0.2102],
+         [-0.5225,  0.3018, -0.3145,  ..., -0.6050, -0.5273, -0.2051],
+         [-0.5010,  0.3586, -0.2988,  ..., -0.6289, -0.5430, -0.1973]]],
+       device='cuda:0', dtype=torch.float16), tensor([[[ 0.0175, -0.4949, -0.0430,  ...,  0.1796,  0.4121, -0.3254],
+         [ 0.1436, -0.0715,  0.7700,  ..., -0.5508,  0.8345, -0.1848],
+         [-0.1610, -0.8149,  0.1841,  ...,  1.0469,  0.1182, -0.1730],
+         ...,
+         [ 0.0389, -0.8872,  0.5791,  ..., -0.1306,  0.1931,  0.9033],
+         [-0.0729, -0.7881,  0.5430,  ..., -0.1741,  0.0764,  0.8711],
+         [ 0.0116, -0.7617,  0.5283,  ..., -0.1082,  0.2236,  1.0586]]],
+       device='cuda:0', dtype=torch.float16)]
+7
+★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
+有text_encoder_2
+下面开始读条-------------->
+循环完了
+image [<PIL.Image.Image image mode=RGB size=1600x1600 at 0x7F0714C15E20>]

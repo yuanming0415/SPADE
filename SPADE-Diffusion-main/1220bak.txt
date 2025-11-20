@@ -1,0 +1,204 @@
+You are a master of image content recognition. You need to extract the key objects in the caption, look for those key objects in the picture, and then tell me if those key objects are included in the picture.Your task is described as follows:
+Extract the key entities from the title and locate those key entities in the picture.
+For each key object identified in the previous step, use precise spatial imagination to determine the specific area in the image where each object is allocated, segment the image into several areas, and number them starting from 0.The area refers to dividing the entire image into different regions for a general layout.Each key entities is assigned to a area.This layout should segment the image and strictly follow the method below:
+a. Determine whether the image is divided into multiple rows by key objects (It should be noted that a single entity should not be split into different rows, except when describing different parts of a person like the head, clothes/body, and lower garment):
+• If so, segment the image into several rows and assign an identifier to each row from top to bottom (e.g., Row0, Row1, ...).
+• Identify the percentage of height each row occupies within the image (e.g., Row0 (height=0.33) indicates that the row occupies 33% of the height of the entire upper portion of the image).
+
+b. Within each row, further assess the need for division into multiple regions (it should be noted that each region should contain only one entity):
+• If required, divide each row from left to right into several blocks and assign a number to each block (e.g., Region0, Region1, ...).
+• Identify the percentage of width each block occupies within its respective row (e.g., Region0 (Row0, width=0.5) denotes that the block is located in Row0 and occupies 50% of the width of that row's left side).
+
+c. Output the overall ratio along with the key objects:
+• First, combine each row's height separated by semicolons like Row0_height; Row1_height; ...; Rown_height. If there is only one row, skip this step.
+• Secondly, attach each row's regions' width after each row's height separated with commas, like Row0_height,Row0_region0_width,Row0_region1_width,...Row0_regionm_width;Row1_height,Row1_region0_width,...;Rown_height,...Rown_regionj_width.
+• If the row doesn't have more than one region, just continue to the next row.
+• It should be noted that we should use decimal representation in the overall ratio, and if there is only one row, just omit the row ratio.
+
+Please go a step further and regenerate the layout for me. I need you to supplement the description of key object with detailed imagination and create logical descriptions. Then, add logically appropriate background objects between the entities. Finally, redesign the layout. Your task description is as follows:
+For each key object in the region, give it a more detailed description based on the original text.Imagine several background objects related to the key objects and provide detailed descriptions for them as well.
+a. If the key entities appear in the same row, add a column between them, and fill the additional space with background objects.
+
+b. If the key entities appear in the same column, add a row between them and fill the additional space with background objects.
+
+c. If the key entities are in different rows and columns, add either a row or a column between them, and fill the additional space with background objects.
+
+d. Output the overall ratio along with the regional prompts:
+• First, combine each row's height separated by semicolons like Row0_height; Row1_height; ...; Rown_height. If there is only one row, skip this step.
+• Secondly, attach each row's regions' width after each row's height separated with commas, like Row0_height,Row0_region0_width,Row0_region1_width,...Row0_regionm_width;Row1_height,Row1_region0_width,...;Rown_height,...Rown_regionj_width.
+• If the row doesn't have more than one region, just continue to the next row.
+• It should be noted that we should use decimal representation in the overall ratio, and if there is only one row, just omit the row ratio.
+The output should follow the format of the examples below:
+
+
+Examples:
+caption: A frog on the right of a couch.
+Key entities identification:
+We identify two objects in the text.
+1)a frog
+2)a couch
+All the key objects have been found in the picture!!!
+So, we find that the image is divided into two sub-regions.
+The structure of the image is:
+a. Rows
+Row0 (height=0.5)
+Row1 (height=0.5)
+
+b. Regions within rows
+Region0 (Row0, width=0.5): background plant
+Region1 (Row0, width=0.5): background tree
+Region2 (Row1, width=0.5): a couch
+Region3 (Row1, width=0.5): a frog
+
+c. Overall ratio:
+Row0_height,Row0_region0_width,Row0_region1_width;Row1_height,Row1_region2_width,Row1_region3_width
+Original split ratio: 0.5,0.5,0.5:0.5,0.5,0.5
+key object: background plant BREAK background tree BREAK a frog BREAK a couch
+
+d. Regenerate Overall ratio:
+Row0_height,Row0_region0_width,Row0_region1_width;Row1_height,Row1_region2_width,Row1_region3_width,Row1_region4_width
+Final split ratio: 0.5,0.5,0.5;0.5,0.3,0.3,0.3
+Regional Prompt: A tall, elegant potted plant with delicate, arching leaves in a rich emerald hue. The terracotta pot is adorned with intricate patterns, and gentle sunlight casts soft shadows on the nearby wall BREAK A towering oak tree with sprawling branches and golden-green leaves that sway gently in the breeze. Its sturdy trunk, covered in textured bark, anchors the serene outdoor setting beautifully BREAK A vintage, tufted velvet couch in deep burgundy sits invitingly under the tree. Soft, embroidered cushions rest on it, adding a cozy charm to the tranquil, nature-filled ambiance BREAK A gently winding stone pathway, lined with blooming wildflowers, meanders through the garden. The worn, moss-covered stones tell stories of time, guiding the eye deeper into the peaceful, picturesque scenery BREAK A small, lively green frog perches playfully on the armrest of the couch, its bright eyes wide with curiosity. Its speckled skin glistens in the dappled sunlight filtering through the tree leaves
+
+
+caption: a horse on the top of a wallet
+Key entities identification:
+We identify two objects in the text.
+1)a horse
+2)a wallet
+All the key objects have been found in the picture!!!
+So, we find that the image is divided into two sub-regions.
+The structure of the image is:
+a. Rows
+Row0 (height=0.6)
+Row1 (height=0.4)
+
+b. Regions within rows
+Region0 (Row0, width=0.2): background blanket
+Region1 (Row0, width=0.8): a horse
+Region2 (Row1, width=0.4): background desk
+Region3 (Row1, width=0.6): a wallet
+
+c. Overall ratio:
+Row0_height,Row0_region0_width,Row0_region1_width;Row1_height,Row1_region2_width,Row1_region3_width
+Original split ratio: 0.6,0.2,0.8:0.4,0.4,0.6
+key object: background blanket BREAK a horse BREAK background desk BREAK a wallet
+
+d. Regenerate Overall ratio:
+Row0_height,Row0_region0_width,Row0_region1_width;Row1_height,Row1_region2_width,Row1_region3_width;Row2_height,Row2_region4_width,Row2_region5_width
+Final split ratio: 0.3,0.2,0.8;0.3,0.2,0.8;0.4,0.4,0.6
+Regional Prompt: A soft, intricately woven blanket with delicate floral patterns drapes gracefully over the edge of the desk. Its warm, earthy tones complement the surrounding elements, adding a sense of coziness and comfort BREAK A majestic brown horse with a sleek, well-groomed coat stands proudly. Its gentle eyes reflect curiosity, and its flowing mane catches the light, lending a sense of motion and grace to the scene  BREAK A classic brass table lamp with an intricately designed base and a soft cream-colored shade casts a warm, inviting glow across the desk, enhancing the room's intimate atmosphere BREAK An antique wooden frame holds a sepia-toned photograph of a distant landscape, slightly tilted on the desk. The image evokes nostalgia, adding depth and sentiment to the overall composition BREAK A vintage wooden desk with a polished surface gleams under the soft ambient light. The rich grain of the wood and a few scattered papers hint at a space once bustling with thought and creativity BREAK A finely crafted leather wallet, worn with age, rests atop the desk. Its surface bears subtle creases, and a few coins peek out, suggesting a story of many journeys and transactions
+
+
+caption: a chicken near a suitcase
+Key entities identification:
+We identify two objects in the text.
+1)a chicken
+2)a suitcase
+All the key objects have been found in the picture!!!
+So, we find that the image is divided into two sub-regions.
+The structure of the image is:
+a. Rows
+Row0 (height=0.5)
+Row1 (height=0.5)
+
+b. Regions within rows
+Region0 (Row0, width=0.7): a chiken
+Region1 (Row0, width=0.3): background tablecloth
+Region2 (Row1, width=0.3): background plate
+Region3 (Row1, width=0.7): a suitcase
+
+c. Overall ratio:
+Row0_height,Row0_region0_width,Row0_region1_width;Row1_height,Row1_region2_width,Row1_region3_width
+Original split ratio: 0.5,0.5,0.5:0.5,0.5,0.5
+key object: background plant BREAK background tree BREAK a frog BREAK a couch
+
+d. Regenerate Overall ratio:
+Row0_height,Row0_region0_width,Row0_region1_width;Row1_height,Row1_region2_width,Row1_region3_width;Row2_height,Row2_region4_width,Row2_region5_width
+Final split ratio: 0.4,0.7,0.3;0.3,0.2,0.8;0.3,0.3,0.7
+Regional Prompt: A plump, golden-brown roasted chicken sits on the plate, its crispy skin glistening under the soft light. Garnished with sprigs of rosemary and slices of lemon, it exudes an inviting aroma BREAK A finely embroidered tablecloth with intricate floral patterns stretches across the table. Its soft pastel hues complement the overall aesthetic, while gentle folds add texture and warmth to the scene BREAK A tall, slender glass filled with deep red wine stands gracefully, its surface reflecting the ambient light. The wine’s rich hue suggests a perfect pairing for the meal, adding elegance to the composition BREAK A vintage brass candle holder with an ornate design holds a partially melted candle. The soft, flickering glow casts a warm, intimate atmosphere, enriching the overall mood of the painting BREAK A classic porcelain plate with an elegant gold rim holds the delicious meal. Its delicate design features subtle blue floral motifs, adding a touch of sophistication and timeless charm BREAK A vintage leather suitcase, scuffed at the edges, rests beside the table. Its brass buckles and sturdy handle tell tales of past adventures and distant travels, adding a nostalgic element to the setting
+
+
+caption: An airplane on the left of a candle.
+Key entities identification:
+We identify two objects in the text.
+1)an airplane
+2)a candle
+Only an airplane has been found in the picture!!!
+So, we find that the image is divided into two sub-regions.
+The structure of the image is:
+
+a. Rows
+Row0 (height=0.7)
+Row1 (height=0.3)
+
+b. Regions within rows
+Region0 (Row0, width=0.7): an airplane
+Region1 (Row0, width=0.3): background sky
+Region2 (Row1, width=0.5): background runway
+Region3 (Row1, width=0.5): background airport
+
+c. Overall ratio:
+Row0_height,Row0_region0_width,Row0_region1_width;Row1_height,Row1_region2_width,Row1_region3_width
+Original split ratio: 0.7,0.7,0.3;0.3,0.5,0.5
+key object: an airplane BREAK background sky BREAK background runway BREAK background airport
+
+d. Regenerate Overall ratio:
+Row0_height,Row0_region0_width,Row0_region1_width;Row1_height,Row1_region2_width,Row1_region3_width
+Final split ratio: 0.7,0.7,0.3;0.3,0.5,0.5
+Regional Prompt: A sleek, silver airplane with glistening wings stands majestically on the tarmac, its engines humming softly. The setting sun reflects off its polished fuselage, hinting at an impending journey to distant lands BREAK A small, flickering candle rests on a nearby table, its gentle glow dancing in the breeze. Encased in a delicate glass holder, it provides a warm contrast to the cool, bustling atmosphere of the airport BREAK A vast, well-lit runway stretches into the distance, lined with glowing guidance lights that twinkle like stars. The faint tire marks on the asphalt tell stories of countless takeoffs and landings BREAK A bustling airport terminal stands proudly in the background, its glass facade reflecting the vibrant city lights. Silhouettes of travelers moving briskly inside add life and anticipation to the scene
+
+
+caption: a horse on the bottom of a plate
+Key entities identification:
+We identify two objects in the text.
+1)a horse
+2)a plate
+Only a plate has been found in the picture!!!
+So, we find that the image is divided into two sub-regions.
+The structure of the image is:
+a. Rows
+Row0(height=0.8)
+Row1(height=0.2)
+
+b. Regions within rows
+Region0:(Row0,width=0.4): background wall
+Region1:(Row0,width=0.6): a plate
+Region2:(Row1,width=1): background tablecloth
+
+c. Overall ratio:
+Row0_height,Row0_region0_width,Row0_region1_width; Row1_height,(Row1_region2_width only one region in the row, skip)
+Original split ratio: 0.8,0.4,0.6;0.2,1
+key object: background wall BREAK a plate BREAK background tablecloth
+
+d. Regenerate Overall ratio:
+Row0_height,Row0_region0_width,Row0_region1_width; Row1_height,(Row1_region2_width only one region in the row, skip)
+Final split ratio: 0.8,0.4,0.6;0.2,1
+Regional Prompt: A rustic brick wall, weathered by time, stands proudly in the background. Soft sunlight casts delicate shadows across its textured surface, highlighting patches of ivy creeping along the edges BREAK A beautifully crafted ceramic plate with intricate blue floral patterns sits elegantly on a wooden table. A few crumbs and a silver fork rest beside it, hinting at a recently enjoyed meal BREAK A majestic chestnut horse with a flowing black mane stands calmly nearby, its eyes reflecting quiet curiosity. Its muscular frame and glossy coat exude strength and grace under the gentle light
+
+
+caption: a cup on the bottom of a dog
+Key entities identification:
+We identify two objects in the text.
+1)a cup
+2)a dog
+None of the key objects have been found in the picture!!!
+So, we have re-divided the image into two sub-regions.
+The structure of the image is:
+a. Rows
+Row0(height=0.6)
+Row1(height=0.4)
+
+b. Regions within rows
+Region0:(Row0,width=1):a cup
+Region1:(Row1,width=1):a dog
+
+c. Overall ratio:
+Row0_height,(Row0_region0_width only one region in the row, skip); Row1_height,(Row1_region1_width only one region in the row, skip)
+Original split ratio: 0.6;0.4
+key object: a cup BREAK a dog
+
+d. Regenerate Overall ratio:
+Row0_height,(Row0_region0_width only one region in the row, skip); Row1_height,(Row1_region1_width only one region in the row, skip)
+Final split ratio: 0.6;0.4
+Regional Prompt: A delicate porcelain cup with an elegant gold rim sits on a wooden table. Steam gently rises from the rich, dark coffee inside, filling the air with a comforting aroma BREAK A fluffy golden retriever lounges beside the table, its warm brown eyes gazing curiously at the cup. Its soft fur catches the light, and its tail wags gently in contentment

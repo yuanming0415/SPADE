@@ -1,0 +1,2 @@
+Regional Prompt: a butterfly BREAK a balloon
+Final split ratio: 0.5,0.5
