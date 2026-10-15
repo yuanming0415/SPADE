@@ -24,6 +24,8 @@ Overview of Proposed SPADE
 
 In this section, we introduce our model SPADE. SPADE primarily comprises two modules, each specifically designed for distinct phases: the pre-noise prediction stage and the noise prediction process itself. First, the diffusion process begins with complete Gaussian noise, which is denoised separately by the Split Noise Prediction Module to roughly determine object placement, thereby enhancing positional accuracy and object recognizability in the generated images. Second, after several steps of Split Noise Prediction, the remaining denoising steps transition to the Split Attention Prediction Module. This further refines positional accuracy while effectively mitigating the resulting decline in overall image integrity introduced by the Split Noise Prediction Module, thus ultimately generating high-fidelity images.
 
+![主要架构图](SPADE-Diffusion-main/__asset__/主要架构图.png)
+
 # SPADE
 SPADE source code repository
 Comming Soon
