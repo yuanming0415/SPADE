@@ -37,12 +37,7 @@ Critical overlap($0.5 < s < 0.625$) Appropriate overlap ensures smooth blending.
 
 Excessive overlap($s\geq 0.625$) When object regions are segmented overly large, these over-summed regions introduce conflicting gradients. This leads to pixel-level artifacts and visual incoherence.
 
-\begin{figure}
-    \centering
-    \includegraphics[width=1\linewidth]{Separate1.jpg}
-    \caption{The flowchart of Split Noise Diffusion}
-    \label{fig3}
-\end{figure}
+![3](SPADE-Diffusion-main/__asset__/3.png)
 
 # SPADE
 SPADE source code repository
