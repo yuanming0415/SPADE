@@ -26,6 +26,24 @@ In this section, we introduce our model SPADE. SPADE primarily comprises two mod
 
 ![主要架构图](SPADE-Diffusion-main/__asset__/主要架构图.png)
 
+Split Noise Prediction Module
+
+In this module, the noisy image is segmented, and each segment is individually processed by the U-Net, as shown in the flowchart, to predict the noise corresponding to its associated object. The segmented noisy images are then reassembled into a complete noisy image, which is fed into the scheduler to predict the next-step image. The Noise Segmentation Coefficient (NSC) represents the proportion of each region relative to the entire image. Let $s$ denote NSC in the Split Noise Prediction Module, and let $w$ denote the width of the latent map. The overlap width is $sw+(1-s)w-w=(2s-1)w$. We discuss the following cases depending on the value of $s$:
+
+No overlap($s \leq 0.5$) Gaps introduce discontinuity through zero-valued parameters, enhancing object positional accuracy at the expense of spatial compression, which may consequently reduce object recognizability.
+
+Critical overlap($0.5 < s < 0.625$) Appropriate overlap ensures smooth blending. When $(2s-1)w\in 0\sim \frac{w}{4}$, it empirically balances object positional accuracy and recognizability. The predicted noise parameters in the overlapping regions are summed:
+{\epsilon }_{merged}(x)={\epsilon }_{1}(x)+{\epsilon }_{2}(x),x\in [(1-s)w,sw]
+
+Excessive overlap($s\geq 0.625$) When object regions are segmented overly large, these over-summed regions introduce conflicting gradients. This leads to pixel-level artifacts and visual incoherence.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{Separate1.jpg}
+    \caption{The flowchart of Split Noise Diffusion}
+    \label{fig3}
+\end{figure}
+
 # SPADE
 SPADE source code repository
 Comming Soon
