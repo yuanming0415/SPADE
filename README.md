@@ -14,6 +14,7 @@ We propose the Split Noise Prediction Method, which partitions noisy images into
 
 On the specialized positional evaluation benchmark T2I-CompBench, our model demonstrates a 27.6\% improvement over the state-of-the-art models. This work further establishes theoretically and experimentally derived optimal parameter configurations for generating two-object layout images.
 
+![Uploading main.png…]()
 
 # SPADE
 SPADE source code repository
