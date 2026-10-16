@@ -39,6 +39,111 @@ Excessive overlap($s\geq 0.625$) When object regions are segmented overly large,
 
 ![3](SPADE-Diffusion-main/__asset__/3.png)
 
+Split Attention Prediction Module
+
+Region-Specific Weighted Attention Mechanism
+
+To enhance control over specific regions of the image, we introduce a Region-Specific Weighted Matrix ${W}_{region}\in {R}^{N*N}$, which adjusts the attention mechanism's Query matrix weights of specific regions during attention computation. The Region Importance Weights (RIW) represent the weighted values assigned to specific regions, with all other regions defaulting to a weight value of 1. This approach aims to fine-tune the focus degree of specific regions. As illustrated. 
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{RIW.jpg}
+    \caption{The illustration of Region-Specific Weighted Attention Mechanism}
+    \label{fig4}
+\end{figure}
+
+\noindent The weighted Query matrix is computed as follows: 
+\begin{equation}
+{Q}_{weighted}=Q\odot {W}_{region}
+\end{equation}
+where $\odot$ represents element-wise multiplication (Hadamard product).
+The proposed Region-Specific Weighted Matrix ${W}_{region}$ enables the application of differentiated weights across regions. Specifically, if a region is of higher focus degree, its corresponding weights in ${W}_{region}$ will be larger, thereby placing greater emphasis on that region during attention computation. The attention weights, now modified by the region-specific weights, is computed as follows:
+\begin{equation}
+{A}_{region}=Softmax(\frac{{Q}_{weighted}K^{T}}{\sqrt{{d}_{k}}})
+\end{equation}
+where ${A}_{region}$ represents the modified attention weights, incorporating the region-specific weights. The term $\frac{{Q}_{weighted}K^{T}}{\sqrt{{d}_{k}}}$ computes the similarity between the weighted Query matrix and the Key matrix, where ${d}_{k}$ denotes the dimensionality of the hidden states of the region prompt. 
+
+The modified attention matrix is then applied to the Value matrix to produce the attention output:
+\begin{equation}
+{Y}_{region}={A}_{region}V
+\end{equation}
+This attention output ${Y}_{region}$ is characterized by attention concentrated on specific regions. When ${W}_{region}$ increases in target regions, the corresponding regions in ${Q}_{weighted}$ are scaled up. This directly increases the dot-product similarity ${Q}_{weighted}K^{T}$ for those regions, sharpening the softmax distribution. Consequently, the attention matrix ${A}_{region}$ becomes more concentrated on the specific regions, suppressing other regions. For two regions with the initial Query matrices ${s}_{1}$ and ${s}_{2}$, their attention weights after scaling by $\alpha$ become:
+\begin{equation}
+{A}_{region}=\frac{{e}^{\alpha {s}_{1}}}{{e}^{\alpha {s}_{1}}+{e}^{\alpha {s}_{2}}}
+\end{equation}
+Once $\alpha$ reaches a critical value, attention weight parameters for the specific region approach 1, and further scaling yields negligible gradient updates. This critical value can be obtained by taking the derivative with respect to ${A}_{region}$:
+\begin{equation}
+\frac{\partial {A}_{region}}{\partial \alpha}\approx 0
+\end{equation}
+This saturation effect limits additional gains in positional accuracy.
+
+\subsubsection{Split Parameters Attention Mechanism}
+The Query matrix is cropped by positional matrix $w$ to form ${A}_{obj}$ components, then regionally integrated into a unified Query matrix. The illustration is shown in the fig. \ref{fig5}. The Split-Attention Coefficient (SAC) measures the proportion of central truncation within object regions. When SAC is too large, it increases pixel spacing between objects, hindering proximity constraints like "near" or "next to". Since it does not modify the hidden states of the region prompt Value matrix, object features remain identifiable. Therefore, recognizability is largely unaffected by changes in SAC.
+
+The base prompt attention weights ${A}_{base}$ and region prompt attention weights ${A}_{obj}$ are fused via a weighting parameter base ratio $\beta $:
+\begin{equation}
+{A}_{final}=\beta {A}_{base}+(1-\beta ){A}_{obj}
+\end{equation}
+Increasing the base ratio reduces object positional accuracy, as the influence of the region prompt weakens. Due to the lack of region-specific modulation in base prompt features, reducing $\beta$ amplifies the contribution of ${A}_{obj}$ but introduces conflicting gradients at region boundaries:
+\begin{equation}
+\frac{\partial \mathcal{L}}{\partial {A}_{obj}}\approx  (1-\beta )\frac{\partial \mathcal{L}}{\partial {A}_{final}}
+\end{equation}
+Large $\beta$ weakens feature gradients from ${A}{obj}$, reducing regional learning. Therefore, higher base ratios impair object positional accuracy. Split Noise Base Ratio (SNBR) and Split Attention Base Ratio (SABR) refer to base ratios in the denoising of Split Noise and Attention Prediction, respectively. Although ${A}{base}$ and ${A}{obj}$ differ in focus, both contain object features, with ${A}{base}$ also aiding object generation.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{SAC5.jpg}
+    \caption{The illustration of Split Parameters Attention Mechanism}
+    \label{fig5}
+\end{figure}
+
+\subsection{integration strategy}
+
+\noindent Split Noise Prediction and Split Attention Prediction are integrated as illustrated in the fig. \ref{fig6}. When determining the optimal step counts for Split Noise Prediction and Split Attention Prediction, we follow these principles: Firstly, the Split Noise Prediction step count should be sufficient to form regional constraints through iterative denoising. Secondly, a proportional number of Split Attention Prediction steps must be retained to balance positional accuracy, object recognizability and overall image integrity. The Split Noise Prediction Step Count (SNSC) refers to the steps assigned to Split Noise Prediction in a 20-step process, with the rest for Split Attention Prediction. We generated 3000 interior layout images, and the results indicate that the model performs best when the SNSC is set to 2 or 3. Employing higher SNSC values may compromise overall image integrity and fall short of achieving complete problem resolution.
+
+\begin{figure}[ht]
+    \centering
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \makebox[1.1\textwidth][c]{\normalsize Split Noise Diffusion}
+        \vspace{0cm}  % 缩小与图片的垂直间距
+        
+        \begin{subfigure}{0.4\textwidth}
+            \centering
+            \includegraphics[width=\linewidth]{1.jpg}
+        \end{subfigure}%
+        \begin{subfigure}{0.3\textwidth}
+            \centering
+            \raisebox{2.75\baselineskip}{\LARGE \ldots \ldots}
+        \end{subfigure}%
+        \begin{subfigure}{0.4\textwidth}
+            \centering
+            \includegraphics[width=\linewidth]{6.jpg}
+        \end{subfigure}
+    \end{minipage}%
+    \hfill
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \makebox[1.1\textwidth][c]{\normalsize Split Attention Diffusion}
+        \vspace{0cm}  % 缩小与图片的垂直间距
+        
+        \begin{subfigure}{0.4\textwidth}
+            \centering
+            \includegraphics[width=\linewidth]{7.jpg}
+        \end{subfigure}%
+        \begin{subfigure}{0.3\textwidth}
+            \centering
+            \raisebox{2.75\baselineskip}{\LARGE \ldots \ldots}
+        \end{subfigure}%
+        \begin{subfigure}{0.4\textwidth}
+            \centering
+            \includegraphics[width=\linewidth]{20.jpg}
+        \end{subfigure}
+    \end{minipage}
+    \caption{Illustration of Module Integration}
+    \label{fig6}
+\end{figure}
+
 # SPADE
 SPADE source code repository
 Comming Soon
