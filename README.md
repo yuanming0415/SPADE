@@ -33,9 +33,9 @@ In this module, the noisy image is segmented, and each segment is individually p
 No overlap($s \leq 0.5$) Gaps introduce discontinuity through zero-valued parameters, enhancing object positional accuracy at the expense of spatial compression, which may consequently reduce object recognizability.
 
 Critical overlap($0.5 < s < 0.625$) Appropriate overlap ensures smooth blending. When $(2s-1)w\in 0\sim \frac{w}{4}$, it empirically balances object positional accuracy and recognizability. The predicted noise parameters in the overlapping regions are summed:
-$$
+```math
 \epsilon_{\mathrm{merged}}(x)=\epsilon_{1}(x)+\epsilon_{2}(x),\quad x\in[(1-s)w,sw]
-$$
+```
 
 Excessive overlap($s\geq 0.625$) When object regions are segmented overly large, these over-summed regions introduce conflicting gradients. This leads to pixel-level artifacts and visual incoherence.
 
