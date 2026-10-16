@@ -45,12 +45,7 @@ Region-Specific Weighted Attention Mechanism
 
 To enhance control over specific regions of the image, we introduce a Region-Specific Weighted Matrix ${W}_{region}\in {R}^{N*N}$, which adjusts the attention mechanism's Query matrix weights of specific regions during attention computation. The Region Importance Weights (RIW) represent the weighted values assigned to specific regions, with all other regions defaulting to a weight value of 1. This approach aims to fine-tune the focus degree of specific regions. As illustrated. 
 
-\begin{figure}
-    \centering
-    \includegraphics[width=1\linewidth]{RIW.jpg}
-    \caption{The illustration of Region-Specific Weighted Attention Mechanism}
-    \label{fig4}
-\end{figure}
+![4](SPADE-Diffusion-main/__asset__/4.png)
 
 \noindent The weighted Query matrix is computed as follows: 
 \begin{equation}
