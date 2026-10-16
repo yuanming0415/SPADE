@@ -47,7 +47,7 @@ To enhance control over specific regions of the image, we introduce a Region-Spe
 
 ![4](SPADE-Diffusion-main/__asset__/4.png)
 
-\noindent The weighted Query matrix is computed as follows: 
+The weighted Query matrix is computed as follows: 
 \begin{equation}
 {Q}_{weighted}=Q\odot {W}_{region}
 \end{equation}
@@ -72,7 +72,7 @@ Once $\alpha$ reaches a critical value, attention weight parameters for the spec
 \end{equation}
 This saturation effect limits additional gains in positional accuracy.
 
-\subsubsection{Split Parameters Attention Mechanism}
+Split Parameters Attention Mechanism
 The Query matrix is cropped by positional matrix $w$ to form ${A}_{obj}$ components, then regionally integrated into a unified Query matrix. The illustration is shown in the fig. \ref{fig5}. The Split-Attention Coefficient (SAC) measures the proportion of central truncation within object regions. When SAC is too large, it increases pixel spacing between objects, hindering proximity constraints like "near" or "next to". Since it does not modify the hidden states of the region prompt Value matrix, object features remain identifiable. Therefore, recognizability is largely unaffected by changes in SAC.
 
 The base prompt attention weights ${A}_{base}$ and region prompt attention weights ${A}_{obj}$ are fused via a weighting parameter base ratio $\beta $:
@@ -85,12 +85,7 @@ Increasing the base ratio reduces object positional accuracy, as the influence o
 \end{equation}
 Large $\beta$ weakens feature gradients from ${A}{obj}$, reducing regional learning. Therefore, higher base ratios impair object positional accuracy. Split Noise Base Ratio (SNBR) and Split Attention Base Ratio (SABR) refer to base ratios in the denoising of Split Noise and Attention Prediction, respectively. Although ${A}{base}$ and ${A}{obj}$ differ in focus, both contain object features, with ${A}{base}$ also aiding object generation.
 
-\begin{figure}
-    \centering
-    \includegraphics[width=1\linewidth]{SAC5.jpg}
-    \caption{The illustration of Split Parameters Attention Mechanism}
-    \label{fig5}
-\end{figure}
+![5](SPADE-Diffusion-main/__asset__/5.png)
 
 \subsection{integration strategy}
 
