@@ -87,52 +87,11 @@ Large $\beta$ weakens feature gradients from ${A}{obj}$, reducing regional learn
 
 ![5](SPADE-Diffusion-main/__asset__/5.png)
 
-\subsection{integration strategy}
+integration strategy
 
 \noindent Split Noise Prediction and Split Attention Prediction are integrated as illustrated in the fig. \ref{fig6}. When determining the optimal step counts for Split Noise Prediction and Split Attention Prediction, we follow these principles: Firstly, the Split Noise Prediction step count should be sufficient to form regional constraints through iterative denoising. Secondly, a proportional number of Split Attention Prediction steps must be retained to balance positional accuracy, object recognizability and overall image integrity. The Split Noise Prediction Step Count (SNSC) refers to the steps assigned to Split Noise Prediction in a 20-step process, with the rest for Split Attention Prediction. We generated 3000 interior layout images, and the results indicate that the model performs best when the SNSC is set to 2 or 3. Employing higher SNSC values may compromise overall image integrity and fall short of achieving complete problem resolution.
 
-\begin{figure}[ht]
-    \centering
-    \begin{minipage}{0.45\textwidth}
-        \centering
-        \makebox[1.1\textwidth][c]{\normalsize Split Noise Diffusion}
-        \vspace{0cm}  % 缩小与图片的垂直间距
-        
-        \begin{subfigure}{0.4\textwidth}
-            \centering
-            \includegraphics[width=\linewidth]{1.jpg}
-        \end{subfigure}%
-        \begin{subfigure}{0.3\textwidth}
-            \centering
-            \raisebox{2.75\baselineskip}{\LARGE \ldots \ldots}
-        \end{subfigure}%
-        \begin{subfigure}{0.4\textwidth}
-            \centering
-            \includegraphics[width=\linewidth]{6.jpg}
-        \end{subfigure}
-    \end{minipage}%
-    \hfill
-    \begin{minipage}{0.45\textwidth}
-        \centering
-        \makebox[1.1\textwidth][c]{\normalsize Split Attention Diffusion}
-        \vspace{0cm}  % 缩小与图片的垂直间距
-        
-        \begin{subfigure}{0.4\textwidth}
-            \centering
-            \includegraphics[width=\linewidth]{7.jpg}
-        \end{subfigure}%
-        \begin{subfigure}{0.3\textwidth}
-            \centering
-            \raisebox{2.75\baselineskip}{\LARGE \ldots \ldots}
-        \end{subfigure}%
-        \begin{subfigure}{0.4\textwidth}
-            \centering
-            \includegraphics[width=\linewidth]{20.jpg}
-        \end{subfigure}
-    \end{minipage}
-    \caption{Illustration of Module Integration}
-    \label{fig6}
-\end{figure}
+![6](SPADE-Diffusion-main/__asset__/6.png)
 
 # SPADE
 SPADE source code repository
